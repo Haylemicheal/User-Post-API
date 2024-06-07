@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+mysqlclient
+alembic
+python-jose
+passlib[bcrypt]
+redis
