@@ -1,31 +1,30 @@
 User API
 ========
 
-This project is a User API built using FastAPI, SQLAlchemy, and Docker. It includes authentication, posting, and caching functionality with a MySQL database and Redis for caching.
+This project is a User POST API built using FastAPI, SQLAlchemy, and Docker. It includes authentication, posting, and caching functionality with a MySQL database and Redis for caching.
 
-Project Structure
------------------
+### Project Structure Explanation
 
-blog\_api/
-├── app/
-│   ├── \_\_init\_\_.py
-│   ├── main.py
-│   ├── models.py
-│   ├── schemas.py
-│   ├── database.py
-│   ├── crud.py
-│   ├── routes/
-│   │   ├── \_\_init\_\_.py
-│   │   ├── auth.py
-│   │   ├── post.py
-│   └── utils/
-│       ├── \_\_init\_\_.py
-│       ├── auth.py
-│       ├── cache.py
-│       ├── dependencies.py
-├── docker-compose.yml
-├── requirements.txt
-└── .env
+- **app/**: This directory contains the main code for the FastAPI application.
+  - **main.py**: Entry point of the FastAPI application.
+  - **models.py**: Contains SQLAlchemy models for database tables.
+  - **schemas.py**: Defines Pydantic models for data validation.
+  - **database.py**: Configures the database connection.
+  - **crud.py**: Contains CRUD operations for interacting with the database.
+  - **routes/**: Contains API endpoints for different functionalities.
+    - **auth.py**: Implements authentication-related endpoints.
+    - **post.py**: Implements endpoints related to posts.
+  - **utils/**: Contains utility functions and dependencies.
+    - **auth.py**: Implements authentication utilities.
+    - **cache.py**: Handles caching functionality.
+    - **dependencies.py**: Defines dependency injections.
+
+- **docker-compose.yml**: Docker Compose file for setting up Docker containers.
+- **requirements.txt**: List of Python dependencies required by the project.
+- **.env**: Environment variable file for configuring database and other settings.
+
+
+
 
 Setup and Installation
 ----------------------
